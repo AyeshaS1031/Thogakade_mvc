@@ -20,7 +20,7 @@
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8eea2" height="154.0" layoutX="34.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="617.0" />
         <ImageView fitHeight="108.0" fitWidth="107.0" layoutX="92.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../ThogaKade/src/main/resources/img/customer.png" />
+                <Image url="@../img/customer.png" />
             </image>
             <effect>
                 <Blend opacity="0.0" />

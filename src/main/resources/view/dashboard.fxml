@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="279.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.DashboardFormController">
+<AnchorPane prefHeight="279.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
     <children>
       <ImageView fitHeight="220.0" fitWidth="381.0" layoutY="64.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
          <image>

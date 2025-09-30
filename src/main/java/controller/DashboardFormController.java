@@ -1,6 +1,6 @@
-package edu.icet.controller;
+package controller;
 
-import edu.icet.stage.createStage;
+import stage.createStage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class DashboardFormController {
+
     Stage customerManagement = createStage.createCustomerStage();
     Stage itemManagement = createStage.createItemStage();
     Stage orderDtlManagement = createStage.createOrderDetailStage();

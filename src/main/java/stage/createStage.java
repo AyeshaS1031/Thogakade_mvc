@@ -1,4 +1,4 @@
-package edu.icet.stage;
+package stage;
 
 import javafx.stage.Stage;
 

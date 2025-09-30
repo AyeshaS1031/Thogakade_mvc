@@ -54,15 +54,15 @@
         <Button layoutX="44.0" layoutY="119.0" mnemonicParsing="false" onAction="#btnDashboard" text="Dashboard" />
         <Label layoutX="45.0" layoutY="167.0" text="Enter Items details below." />
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73e0f8" height="100.0" layoutY="-1.0" stroke="#000607" strokeType="INSIDE" width="619.0" />
-        <ImageView fitHeight="131.0" fitWidth="115.0" layoutX="44.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="100.0" fitWidth="144.0" layoutX="27.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../img/Items.png" />
+                <Image url="@../img/OrderDetails.png" />
             </image>
             <effect>
                 <Blend opacity="0.0" />
             </effect>
         </ImageView>
-        <Label layoutX="170.0" layoutY="35.0" text="Items Management Form" textFill="#1e2854">
+        <Label layoutX="170.0" layoutY="35.0" text="Order Details Management Form" textFill="#1e2854">
             <font>
                 <Font name="Arial Black" size="21.0" />
             </font>

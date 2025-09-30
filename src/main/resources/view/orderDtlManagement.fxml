@@ -1,14 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.orderDetailController.OrderDetailManagementFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="596.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.orderDetailController.OrderDetailManagementFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b6d5d9" height="134.0" layoutX="33.0" layoutY="201.0" stroke="BLACK" strokeType="INSIDE" width="564.0" />
+        <JFXTextField fx:id="txtNumber" layoutX="144.0" layoutY="208.0" />
+        <Label layoutX="71.0" layoutY="222.0" prefHeight="17.0" prefWidth="55.0" text="Number:">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="12.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtDescription" layoutX="145.0" layoutY="234.0" prefHeight="25.0" prefWidth="396.0" />
+        <Label layoutX="70.0" layoutY="248.0" prefHeight="17.0" prefWidth="74.0" text="Description:">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="12.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtQuantity" layoutX="145.0" layoutY="262.0" prefHeight="25.0" prefWidth="107.0" />
+        <Label layoutX="70.0" layoutY="274.0" prefHeight="17.0" prefWidth="107.0" text="Quantity :">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="12.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtName" layoutX="377.0" layoutY="209.0" prefHeight="25.0" prefWidth="164.0" />
+        <Label layoutX="330.0" layoutY="223.0" prefHeight="17.0" prefWidth="47.0" text="Name:">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="305.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddOnAction" text="Add" />
+        <Button layoutX="489.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />
+        <Button layoutX="360.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+        <Button layoutX="431.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnClearOnAction" text="Clear" />
+        <TableView fx:id="tblItems" layoutX="30.0" layoutY="351.0" prefHeight="216.0" prefWidth="564.0">
+            <columns>
+                <TableColumn fx:id="colNumber" prefWidth="92.0" text="Number" />
+                <TableColumn fx:id="colName" prefWidth="122.0" text="Name" />
+                <TableColumn fx:id="colDescription" prefWidth="177.0" text="Description" />
+                <TableColumn fx:id="colQuantity" prefWidth="172.0" text="Quantity" />
+            </columns>
+        </TableView>
+        <Button layoutX="511.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnDashboard" text="Dashboard" />
+        <Label layoutX="45.0" layoutY="167.0" text="Enter Items details below." />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#60acbf" height="100.0" layoutY="-1.0" stroke="#000607" strokeType="INSIDE" width="619.0" />
+        <ImageView fitHeight="131.0" fitWidth="115.0" layoutX="44.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/Items.png" />
+            </image>
+            <effect>
+                <Blend opacity="0.0" />
+            </effect>
+        </ImageView>
+        <Label layoutX="170.0" layoutY="45.0" text="Items Management Form" textFill="#1e2854">
+            <font>
+                <Font name="Arial Black" size="21.0" />
+            </font>
+        </Label>
+    </children>
 </AnchorPane>

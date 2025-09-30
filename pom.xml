@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>ThogaKade</artifactId>
+    <artifactId>ThogaKade_mvc_architecture</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -43,6 +43,14 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>9.4.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.40</version>
+        </dependency>
+
 
     </dependencies>
 
